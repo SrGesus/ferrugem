@@ -41,7 +41,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "insere" => "insert",
         "obtem" => "get",
         "legal" => "allow",
-        "caralho" | "pânico" | "ups" => "panic",
+        "caralho" | "cacete" | "ups" => "panic",
         "módulo" => "mod",
         "mutável" => "mut",
         "novo" => "new",
