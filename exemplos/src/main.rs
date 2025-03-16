@@ -40,11 +40,11 @@ ferrugem::ferrugem! {
         }
     }
 
-    assíncrona função exemple() {
+    assíncrona função exemplo() {
     }
 
-    assíncrona função exemple2() {
-        exemple().espera;
+    assíncrona função exemplo2() {
+        exemplo().espera;
     }
 
     função principal() {
