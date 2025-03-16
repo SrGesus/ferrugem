@@ -98,9 +98,9 @@ calcadeira_ferrugem::ferrugem! {
                 fluxo_novo.estende(elementos_grupo);
                 saída.empurra(ÁrvoreDeSímbolos::Grupo(Grupo::novo(grupo.delimitador(), fluxo_novo)));
             }
-            ÁrvoreDeSímbolos::Identificador(identifiant) => {
-                se seja Algum(identifiant) = substitui_identificador(identifiant) {
-                    saída.empurra(identifiant);
+            ÁrvoreDeSímbolos::Identificador(identificador) => {
+                se seja Algum(identificador) = substitui_identificador(identificador) {
+                    saída.empurra(identificador);
                 }
             }
             ÁrvoreDeSímbolos::Pontuação(..) | ÁrvoreDeSímbolos::Literal(..) => {
