@@ -34,7 +34,6 @@ calcadeira_ferrugem::ferrugem! {
             "desembrulha" => "unwrap",
             "predefinido" => "default",
             "como_ref" => "as_ref",
-            // "io" => "io",
             "externo" => "extern",
             "falso" => "false",
             "função" => "fn",
@@ -82,7 +81,7 @@ calcadeira_ferrugem::ferrugem! {
             "delimitador" => "delimiter",
             "Pontuação" => "Punct",
             "macro_processual" => "proc_macro",
-            "colecoes" => "collections",
+            "coleções" => "collections",
             _ => &cadeia_identificador,
         };
 

@@ -1,7 +1,7 @@
 ferrugem::ferrugem! {
     externo contentor ferrugem;
 
-    utiliza std::colecoes::Dicionário como Dic;
+    utiliza std::coleções::Dicionário como Dic;
 
     característica ChaveValor {
         função insere(&próprio, chave: Cadeia, valor: Cadeia);

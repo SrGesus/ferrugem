@@ -33,7 +33,6 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "desembrulha" => "unwrap",
         "predefinido" => "default",
         "como_ref" => "as_ref",
-        // "io" => "io",
         "externo" => "extern",
         "falso" => "false",
         "função" => "fn",
@@ -81,7 +80,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "delimitador" => "delimiter",
         "Pontuação" => "Punct",
         "macro_processual" => "proc_macro",
-        "colecoes" => "collections",
+        "coleções" => "collections",
         _ => &ident_str,
     };
 
