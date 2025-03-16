@@ -1,0 +1,10 @@
+[package]
+name = "ferrugem"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+calcadeira_ferrugem = { path = "../calçadeira_macro_processual_ferrugem" }
+
+[lib]
+proc-macro = true
