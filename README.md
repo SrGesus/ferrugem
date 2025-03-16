@@ -1,6 +1,6 @@
 # ferrugem
 
-<!-- ![ferrugem](logo.jpeg) -->
+![ferrugem](logo.jpeg)
 
 Aren't you _cansado_ from writing Rust programs in English? Do you like saying
 "caralho" a lot? Would you like to try something different, in an exotic and
