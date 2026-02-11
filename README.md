@@ -29,7 +29,7 @@ ferrugem::ferrugem! {
 
     característica ChaveValor {
         função enfia(&próprio, chave: Cadeia, valor: Cadeia);
-        função obtem(&próprio, chave: Cadeia) -> Resultado<PodeSer<&Cadeia>, Cadeia>;
+        função saca(&próprio, chave: Cadeia) -> Resultado<PodeSer<&Cadeia>, Cadeia>;
     }
 
     estático mutável DICIONÁRIO: PodeSer<Dic<Cadeia, Cadeia>> = Nenhum;
@@ -39,13 +39,13 @@ ferrugem::ferrugem! {
     implementa ChaveValor para Concreta {
         função enfia(&próprio, chave: Cadeia, valor: Cadeia) {
             seja dic = confia {
-                DICIONÁRIO.obtem_ou_enfia_com(Predefinido::predefinido)
+                DICIONÁRIO.saca_ou_enfia_com(Predefinido::predefinido)
             };
             dic.enfia(chave, valor);
         }
-        função obtem(&próprio, chave: Cadeia) -> Resultado<PodeSer<&Cadeia>, Cadeia> {
+        função saca(&próprio, chave: Cadeia) -> Resultado<PodeSer<&Cadeia>, Cadeia> {
             se seja Algum(dic) = juro-pela-minha-morte { DICIONÁRIO.como_ref() } {
-                Bom(dic.obtem(&chave))
+                Bom(dic.saca(&chave))
             } ou_então {
                 Mau("mau maria que o gato já mia.".torna_em())
             }
