@@ -38,13 +38,13 @@ ferrugem::ferrugem! {
 
     implementa ChaveValor para Concreta {
         função insere(&próprio, chave: Cadeia, valor: Cadeia) {
-            seja dic = perigo {
+            seja dic = confia {
                 DICIONÁRIO.obtem_ou_insere_com(Predefinido::predefinido)
             };
             dic.insere(chave, valor);
         }
         função obtem(&próprio, chave: Cadeia) -> Resultado<PodeSer<&Cadeia>, Cadeia> {
-            se seja Algum(dic) = perigo { DICIONÁRIO.como_ref() } {
+            se seja Algum(dic) = confia { DICIONÁRIO.como_ref() } {
                 Bom(dic.obtem(&chave))
             } ou_então {
                 Mau("mau maria que o gato já mia.".torna_em())

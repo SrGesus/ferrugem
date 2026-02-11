@@ -27,7 +27,7 @@ calcadeira_ferrugem::ferrugem! {
             "como" => "as",
             "constante" => "const",
             "característica" => "trait",
-            "perigo" => "unsafe",
+            "confia" => "unsafe",
             "em" => "in",
             "de" => "from",
             "dinâmico" => "dyn",

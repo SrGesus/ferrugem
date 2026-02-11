@@ -1,3 +1,7 @@
+/*
+ * Esta é uma 'calçadeira' (bootstrap) para permitir escrever o macro processual
+ * em ferrugem.
+ */
 use proc_macro::{Group, Ident, TokenStream, TokenTree};
 
 fn replace_ident(ident: Ident) -> Option<TokenTree> {
@@ -26,7 +30,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "como" => "as",
         "constante" => "const",
         "característica" => "trait",
-        "perigo" => "unsafe",
+        "confia" => "unsafe",
         "em" => "in",
         "de" => "from",
         "dinâmico" => "dyn",
