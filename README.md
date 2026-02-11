@@ -44,7 +44,7 @@ ferrugem::ferrugem! {
             dic.insere(chave, valor);
         }
         função obtem(&próprio, chave: Cadeia) -> Resultado<PodeSer<&Cadeia>, Cadeia> {
-            se seja Algum(dic) = confia { DICIONÁRIO.como_ref() } {
+            se seja Algum(dic) = juro-pela-minha-morte { DICIONÁRIO.como_ref() } {
                 Bom(dic.obtem(&chave))
             } ou_então {
                 Mau("mau maria que o gato já mia.".torna_em())

@@ -27,7 +27,7 @@ calcadeira_ferrugem::ferrugem! {
             "como" => "as",
             "constante" => "const",
             "característica" => "trait",
-            "confia" => "unsafe",
+            "confia" | "juro-pela-minha-morte" => "unsafe",
             "em" => "in",
             "de" => "from",
             "dinâmico" => "dyn",
