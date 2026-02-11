@@ -20,7 +20,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "Resultado" => "Result",
         "Próprio" => "Self",
         "imprime" => "println",
-        "pára" => "break",
+        "achantra" => "break",
         "assíncrona" => "async",
         "espera" => "await",
         "ciclo" => "loop",

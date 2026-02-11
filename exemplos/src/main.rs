@@ -59,7 +59,7 @@ ferrugem::ferrugem! {
 
         por i em 0..10 {
             seja val = ciclo {
-                pára i;
+                achantra i;
             };
 
             enquanto que x < val {

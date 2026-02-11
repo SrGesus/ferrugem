@@ -17,7 +17,7 @@ calcadeira_ferrugem::ferrugem! {
             "Resultado" => "Result",
             "Próprio" => "Self",
             "imprime" => "println",
-            "pára" => "break",
+            "achantra" => "break",
             "assíncrona" => "async",
             "espera" => "await",
             "ciclo" => "loop",
