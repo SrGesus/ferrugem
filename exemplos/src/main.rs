@@ -4,7 +4,7 @@ ferrugem::ferrugem! {
     utiliza std::coleções::Dicionário como Dic;
 
     característica ChaveValor {
-        função insere(&próprio, chave: Cadeia, valor: Cadeia);
+        função enfia(&próprio, chave: Cadeia, valor: Cadeia);
         função obtem(&próprio, chave: Cadeia) -> Resultado<PodeSer<&Cadeia>, Cadeia>;
     }
 
@@ -13,11 +13,11 @@ ferrugem::ferrugem! {
     estrutura Concreta;
 
     implementa ChaveValor para Concreta {
-        função insere(&próprio, chave: Cadeia, valor: Cadeia) {
+        função enfia(&próprio, chave: Cadeia, valor: Cadeia) {
             seja dic = confia {
-                DICIONÁRIO.obtem_ou_insere_com(Predefinido::predefinido)
+                DICIONÁRIO.obtem_ou_enfia_com(Predefinido::predefinido)
             };
-            dic.insere(chave, valor);
+            dic.enfia(chave, valor);
         }
         função obtem(&próprio, chave: Cadeia) -> Resultado<PodeSer<&Cadeia>, Cadeia> {
             se seja Algum(dic) = confia { DICIONÁRIO.como_ref() } {
