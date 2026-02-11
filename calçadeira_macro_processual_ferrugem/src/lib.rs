@@ -79,7 +79,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "extensão" => "span",
         "Vetor" => "Vec",
         "fluxo" => "stream",
-        "empurra" => "push",
+        "põe" => "push",
         "estende" => "extend",
         "delimitador" => "delimiter",
         "Pontuação" => "Punct",

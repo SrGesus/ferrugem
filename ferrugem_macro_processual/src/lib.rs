@@ -76,7 +76,7 @@ calcadeira_ferrugem::ferrugem! {
             "extensão" => "span",
             "Vetor" => "Vec",
             "fluxo" => "stream",
-            "empurra" => "push",
+            "põe" => "push",
             "estende" => "extend",
             "delimitador" => "delimiter",
             "Pontuação" => "Punct",
@@ -96,15 +96,15 @@ calcadeira_ferrugem::ferrugem! {
                 substitui_fluxo(grupo.fluxo(), &mutável elementos_grupo);
                 seja mutável fluxo_novo = FluxoDeSímbolos::novo();
                 fluxo_novo.estende(elementos_grupo);
-                saída.empurra(ÁrvoreDeSímbolos::Grupo(Grupo::novo(grupo.delimitador(), fluxo_novo)));
+                saída.põe(ÁrvoreDeSímbolos::Grupo(Grupo::novo(grupo.delimitador(), fluxo_novo)));
             }
             ÁrvoreDeSímbolos::Identificador(identificador) => {
                 se seja Algum(identificador) = substitui_identificador(identificador) {
-                    saída.empurra(identificador);
+                    saída.põe(identificador);
                 }
             }
             ÁrvoreDeSímbolos::Pontuação(..) | ÁrvoreDeSímbolos::Literal(..) => {
-                saída.empurra(símbolo);
+                saída.põe(símbolo);
             }
         }
     }
