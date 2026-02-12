@@ -2,6 +2,7 @@ ferrugem::ferrugem! {
     externo contentor ferrugem;
 
     utiliza std::coleções::Dicionário como Dic;
+    utiliza chrono::prelude::*;
 
     característica ChaveValor {
         função enfia(&próprio, chave: Cadeia, valor: Cadeia);
@@ -74,6 +75,18 @@ ferrugem::ferrugem! {
         }
 
         //secundária();
+
+        quim_barreiros(Vetor::de([Carro{}]), 21);
+    }
+
+    estrutura Carro {}
+
+    função quim_barreiros(mut garagem_da_vizinha: Vetor<Carro>, hora_que_eu_quiser: u32) {
+        enquanto Local::agora().hora() == hora_que_eu_quiser {
+            se seja Algum(carro) = garagem_da_vizinha.tira() {
+                garagem_da_vizinha.põe(carro);
+            }
+        }
     }
 
     #[legal(código_inacessível)]

@@ -85,6 +85,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "Pontuação" => "Punct",
         "macro_processual" => "proc_macro",
         "coleções" => "collections",
+        "tira" => "pop",
         _ => &ident_str,
     };
 

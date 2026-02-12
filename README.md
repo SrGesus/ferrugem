@@ -23,34 +23,42 @@ Here's an example of what can be achieved with ferrugem:
 
 ```rust
 ferrugem::ferrugem! {
-    externo contentor ferrugem;
+  externo contentor ferrugem;
 
-    utiliza std::coleções::Dicionário como Dic;
+  utiliza std::coleções::Dicionário como Dic;
 
-    característica ChaveValor {
-        função enfia(&próprio, chave: Cadeia, valor: Cadeia);
-        função saca(&próprio, chave: Cadeia) -> Resultado<PodeSer<&Cadeia>, Cadeia>;
+  função quim_barreiros(mut garagem_da_vizinha: Vetor<Carro>, hora_que_eu_quiser: u32) {
+    enquanto Local::agora().hora() == hora_que_eu_quiser {
+      se seja Algum(carro) = garagem_da_vizinha.tira() {
+        garagem_da_vizinha.põe(carro);
+      }
     }
+  }
 
-    estático mutável DICIONÁRIO: PodeSer<Dic<Cadeia, Cadeia>> = Nenhum;
+  característica ChaveValor {
+    função enfia(&próprio, chave: Cadeia, valor: Cadeia);
+    função saca(&próprio, chave: Cadeia) -> Resultado<PodeSer<&Cadeia>, Cadeia>;
+  }
 
-    estrutura Concreta;
+  estático mutável DICIONÁRIO: PodeSer<Dic<Cadeia, Cadeia>> = Nenhum;
 
-    implementa ChaveValor para Concreta {
-        função enfia(&próprio, chave: Cadeia, valor: Cadeia) {
-            seja dic = confia {
-                DICIONÁRIO.saca_ou_enfia_com(Predefinido::predefinido)
-            };
-            dic.enfia(chave, valor);
-        }
-        função saca(&próprio, chave: Cadeia) -> Resultado<PodeSer<&Cadeia>, Cadeia> {
-            se seja Algum(dic) = juro-pela-minha-morte { DICIONÁRIO.como_ref() } {
-                Bom(dic.saca(&chave))
-            } ou_então {
-                Mau("mau maria que o gato já mia.".torna_em())
-            }
-        }
+  estrutura Concreta;
+
+  implementa ChaveValor para Concreta {
+    função enfia(&próprio, chave: Cadeia, valor: Cadeia) {
+      seja dic = confia {
+        DICIONÁRIO.saca_ou_enfia_com(Predefinido::predefinido)
+      };
+      dic.enfia(chave, valor);
     }
+    função saca(&próprio, chave: Cadeia) -> Resultado<PodeSer<&Cadeia>, Cadeia> {
+      se seja Algum(dic) = juro-pela-minha-morte { DICIONÁRIO.como_ref() } {
+        Bom(dic.saca(&chave))
+      } ou_então {
+        Mau("mau maria que o gato já mia.".torna_em())
+      }
+    }
+  }
 }
 ```
 

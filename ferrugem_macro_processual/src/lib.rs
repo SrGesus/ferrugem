@@ -82,6 +82,9 @@ calcadeira_ferrugem::ferrugem! {
             "Pontuação" => "Punct",
             "macro_processual" => "proc_macro",
             "coleções" => "collections",
+            "tira" => "pop",
+            "hora" => "hour",
+            "agora" => "now",
             _ => &cadeia_identificador,
         };
 
