@@ -13,7 +13,7 @@ calcadeira_ferrugem::ferrugem! {
             "Erro" => "Error",
             "PodeSer" => "Option",
             "Algum" => "Some",
-            "Nenhum" => "None",
+            "Nenhum" | "na-choque-nem-berbigão" => "None",
             "Resultado" => "Result",
             "Próprio" => "Self",
             "imprime" => "println",
